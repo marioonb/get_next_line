@@ -6,7 +6,7 @@
 /*   By: mbelorge <mbelorge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 13:18:20 by mbelorge          #+#    #+#             */
-/*   Updated: 2020/01/03 15:45:53 by mbelorge         ###   ########.fr       */
+/*   Updated: 2021/12/09 15:20:28 by mbelorge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ int				get_next_line(int fd, char **line)
 	}
 	memory = memorywork(line, memory);
 	free(buf);
-	if (ret || memory)
+	if (ret || memory || line)
 		return (1);
 	free(memory);
 	return (0);
